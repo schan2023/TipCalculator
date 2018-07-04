@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,13 +18,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uae-ci-apE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZmL-g2-IUm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bml-Ga-cnt">
+                                <rect key="frame" x="15" y="129" width="345" height="203"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OzF-Vq-UZa">
+                                <rect key="frame" x="15" y="356" width="345" height="203"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZZ-99-7eW">
+                                <rect key="frame" x="15" y="583" width="345" height="60"/>
+                                <color key="backgroundColor" name="tcDarkBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="p5H-So-EO7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" name="tcOffWhite"/>
+                        <constraints>
+                            <constraint firstItem="OZZ-99-7eW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="7ga-DQ-TbY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="ZmL-g2-IUm" secondAttribute="bottom" constant="-85" id="8ew-bW-CLD"/>
+                            <constraint firstItem="OzF-Vq-UZa" firstAttribute="top" secondItem="Bml-Ga-cnt" secondAttribute="bottom" constant="24" id="B9N-fQ-WmW"/>
+                            <constraint firstItem="OzF-Vq-UZa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Je3-Cy-eeW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OZZ-99-7eW" secondAttribute="trailing" constant="15" id="a0q-eT-s5b"/>
+                            <constraint firstItem="OZZ-99-7eW" firstAttribute="top" secondItem="OzF-Vq-UZa" secondAttribute="bottom" constant="24" id="fsr-TS-lUN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bml-Ga-cnt" secondAttribute="trailing" constant="15" id="gBZ-DP-t9k"/>
+                            <constraint firstItem="ZmL-g2-IUm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hDY-6A-Vxs"/>
+                            <constraint firstItem="Bml-Ga-cnt" firstAttribute="top" secondItem="ZmL-g2-IUm" secondAttribute="bottom" constant="24" id="hUy-Rm-T4l"/>
+                            <constraint firstItem="Bml-Ga-cnt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="jtJ-c6-eIr"/>
+                            <constraint firstItem="ZmL-g2-IUm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pzI-Nm-AkQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OzF-Vq-UZa" secondAttribute="trailing" constant="15" id="qMG-SW-9SO"/>
+                            <constraint firstItem="ZmL-g2-IUm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tDk-cN-WCv"/>
+                            <constraint firstItem="OzF-Vq-UZa" firstAttribute="height" secondItem="Bml-Ga-cnt" secondAttribute="height" id="vfk-b5-9N6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OZZ-99-7eW" secondAttribute="bottom" constant="24" id="wQO-3X-Cyi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -32,4 +65,12 @@
             <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="tcDarkBlue">
+            <color red="0.16899999976158142" green="0.17599999904632568" blue="0.36100000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tcOffWhite">
+            <color red="0.96899998188018799" green="0.96899998188018799" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
